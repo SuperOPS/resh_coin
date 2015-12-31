@@ -1,0 +1,40 @@
+/* Arma OPS Basic Description.ext */
+
+author="OPS";
+OnLoadName = "Reshmaan COIN V1";
+OnLoadMission = "ISAF ANA and Insurgents Duke it out";
+loadScreen = "img\loadScreen.paa";
+
+overviewPicture = "img\armaops.paa";
+
+overviewText = "V1.1 Reshmaan COIN OPS";
+
+disabledAI = 1;  // Disables all the AI in the load screen 
+
+joinUnassigned = 1; // This Forces Players to join unassigned 
+
+
+saving = 0;  // Prevents the mission being saved 
+
+forceRotorLibSimulation = 1; //force enable 
+
+respawn = 3; // forces a player to spawn at a respawn_west or respawn_east or respawn_guirellia marker
+
+respawnButton = 0; // Removes the ability to use the respawn button depending on ACE settings this is good or bad. 
+
+/* Used to remove elemnts of the hud */
+showHUD[] = {
+	true,	// Scripted HUD (same as showHUD command)
+	true,	// Vehicle + soldier info
+	false,	// Vehicle radar [HIDDEN]
+	false,	// Vehicle compass [HIDDEN]
+	true,	// Tank direction indicator
+	true,	// Commanding menu
+	true,	// Group Bar
+	true	// HUD Weapon Cursors
+};
+
+/* removes the abiliy to use the side Global and local channels */ 
+
+disableChannels[]={0,1,2,6};
+

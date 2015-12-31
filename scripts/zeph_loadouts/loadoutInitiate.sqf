@@ -17,7 +17,7 @@ if (didJIP) then
 	{
 		//Put Switch Cases here
 	};
-	0 = player execVM "loadouts.sqf";
+	0 = player execVM "scripts/zeph_loadouts/loadouts.sqf";
 }
 else
 {
@@ -40,7 +40,7 @@ else
 		//Calls loadouts on server
 		if (isServer) then
 		{
-			{_load1 = _x execVM "loadouts.sqf"; waitUntil {scriptDone _load1};} forEach allUnits;
+			{_load1 = _x execVM "scripts/zeph_loadouts/loadouts.sqf"; waitUntil {scriptDone _load1};} forEach allUnits;
 		};
 		//Calls loadouts on players (non-dedi clients, aka not the server)
 		if (!isDedicated) then
@@ -50,6 +50,6 @@ else
 				waitUntil {player == player};
 			};
 			waitUntil {local player};
-			_load2 = player execVM "loadouts.sqf";
+			_load2 = player execVM "scripts/zeph_loadouts/loadouts.sqf";
 		};
 	};

@@ -15,4 +15,4 @@ switch true do
 {
 	//Put Switch Cases here
 };
-0 = player execVM "loadouts.sqf";
+0 = player execVM "scripts/zeph_loadouts/loadouts.sqf";
